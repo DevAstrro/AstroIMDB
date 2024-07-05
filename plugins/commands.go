@@ -12,7 +12,7 @@ import (
 
 var (
 	startText = `
-<i><b>👋 Hey there <tg-spoiler>%s</tg-spoiler>,</b>
+<i><b>🔮 Hey there <tg-spoiler>%s</tg-spoiler>,</b>
 This bot can search multiple movie databases to get details about any movie or show.</i>
 
 <blockquote expandable><u><b>DISCLAIMER</b></u>
@@ -26,7 +26,7 @@ This bot is only for limited non-commercial use of <a href='https://help.imdb.co
 </blockquote>
 `
 
-	startButtons = append(inlineSearchButtons, []gotgbot.InlineKeyboardButton{{Text: "Source Code", Url: "github.com/Jisin0/filmigobot"}})
+	startButtons = append(inlineSearchButtons, []gotgbot.InlineKeyboardButton{{Text: "Updates⚡️", Url: "t.me/AstroBotUpdates"}})
 )
 
 func Start(bot *gotgbot.Bot, ctx *ext.Context) error {
