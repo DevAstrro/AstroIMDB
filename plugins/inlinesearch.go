@@ -25,21 +25,21 @@ var (
 )
 
 var (
-	startSearchingButton = &gotgbot.InlineQueryResultsButton{Text: "Start typing the name of your movie to search ...", StartParameter: "nvm"}
-	searchResultsButton  = &gotgbot.InlineQueryResultsButton{Text: "Here Are Your Results 👇", StartParameter: "nvm2"}
+	startSearchingButton = &gotgbot.InlineQueryResultsButton{Text: "Type Your Movies's Name 🎊", StartParameter: "nvm"}
+	searchResultsButton  = &gotgbot.InlineQueryResultsButton{Text: "Here Are Your Results ⚡️", StartParameter: "nvm2"}
 
 	notFoundImage = "https://telegra.ph/file/24788bfd2b087c292fbe2.jpg"
 
 	inlineSearchButtons = [][]gotgbot.InlineKeyboardButton{
-		{{Text: "📺 Search IMDb", SwitchInlineQueryCurrentChat: &inlineIMDbSwitch}},
-		{{Text: "💻 Search OTT", SwitchInlineQueryCurrentChat: &inlineJWSwitch}},
+		{{Text: "• Search IMDb •", SwitchInlineQueryCurrentChat: &inlineIMDbSwitch}},
+		{{Text: "• Search OTT •", SwitchInlineQueryCurrentChat: &inlineJWSwitch}},
 	}
 
 	noResultsArticle = gotgbot.InlineQueryResultArticle{
 		Id:    notAvailable,
-		Title: "No Results Were Found for Your Query !",
+		Title: "No Results Were Found for Your Query 💔",
 		InputMessageContent: gotgbot.InputTextMessageContent{
-			MessageText: "<i>👋 Sorry I didn't find anything for that !\nUse the buttons below to Search Again 👇</i>",
+			MessageText: "<i>I didn't find anything for that💔\nUse the buttons below to Search Again 🔻</i>",
 			ParseMode:   gotgbot.ParseModeHTML,
 		},
 		ReplyMarkup:  &gotgbot.InlineKeyboardMarkup{InlineKeyboard: inlineSearchButtons},
